@@ -1,20 +1,23 @@
-# Hello World Voting Distributed Application
+# VOTOGEN
 
-## Usage
+## Projeto de um Sistema de Votação Aplicando a Tecnologia Blockchain.
 
-You must have [testrpc](https://github.com/ethereumjs/testrpc) running at `localhost:8545`. Once it's setup perform the following steps.
+A instalação se dá por meio dos comandos:
 
-1. `npm install`
-2. `node deploy.js` deploys the `Voting.sol` smart contract to testrpc. It will print out the address of the contract.
+Para instalar o TesteRPC: `npm install –g ethereumjs-testrpc`
 
-`interact.js` contains some code that shows the basics of how to interact with a smart contract via JavaScript and web3. If you would like to see it run then use the following command
+Para instalar dependências do repositório: `npm install`
 
-`node interact.js <address>`
+Para executar projeto: `testrpc`
 
-where `<address>` is the address of the deployed voting smart contract printed out by the `deploy.js` script.
+Ao ser executado o projeto criara 10 endereços virtuais de fundos, e por se tratar apenas de um ambiente de teste, não será gasto nenhuma unidade monetária neste processo.
 
-To view the app you must copy this addres into the correct spot in line 8 of `index.js` then view `index.html` in your browser.
+Para desenvolver os contratos inteligentes dentro do Ethereum a linguagem comumente mais utilizada é a Solidity, responsável por realizar a criação, compilação e realização dos testes destes contratos.
 
-## References
+Para instalar: `npm install –g truffle`
 
-I created this following Mahesh Murthy's helpful [tutorial](https://medium.com/@mvmurthy/full-stack-hello-world-voting-ethereum-dapp-tutorial-part-1-40d2d0d807c2) on the basics of creating Dapps.
+Para configurar: `mkdir solidity-experiments`
+
+Para iniciar: `truffle init`
+
+Com isso se tem um ambiente de desenvolvimento Ethereum pré-configurado, disponível para elaboração do contrato e inclusão dos dados na plataforma Ethereum.
