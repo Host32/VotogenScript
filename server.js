@@ -73,6 +73,8 @@ function getContract(address, callback) {
             console.error(e);
             callback(false);
         }
+    } else {
+        callback(addresses[address]);
     }
 }
 
